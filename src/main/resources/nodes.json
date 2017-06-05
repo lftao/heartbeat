@@ -1,0 +1,11 @@
+[{
+		"host" : "127.0.0.1",
+		"port" : "81",
+		"callback" : "com.javatao.heartbeat.TestCallback"
+	},
+	{
+		"host" : "127.0.0.1",
+		"port" : "80",
+		"callback" : "false"
+	}
+]
