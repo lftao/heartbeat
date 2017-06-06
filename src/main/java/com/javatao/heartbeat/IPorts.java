@@ -113,9 +113,9 @@ public class IPorts {
         this.callback = callback;
     }
 
-    public void setCallback(String callback) {
+    public void setCallback(String className) {
         try {
-            Object instance = Class.forName(callback).newInstance();
+            Object instance = Class.forName(className).newInstance();
             this.callback = (IHBCallback) instance;
         } catch (Exception e) {
             e.printStackTrace();

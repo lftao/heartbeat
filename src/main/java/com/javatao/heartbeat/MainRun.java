@@ -23,9 +23,7 @@ public class MainRun {
         // 转换map
         List<Map<String, Object>> list = Utils.toArrayMap(s);
         // 通用配置参数
-        URL cfp = HBConfig.class.getResource("/config.properties");
-        Properties pro = new Properties();
-        pro.load(cfp.openStream());
+        Properties pro = Utils.loadConfig();
         String glbCallback = pro.getProperty("callback");
         // 包装对象
         List<IPorts> iPorts = new ArrayList<>();

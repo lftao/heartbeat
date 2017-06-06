@@ -18,6 +18,7 @@ public class AList<T> extends ArrayList<T> {
                     callback.add(ports);
                 }
             }
+            Utils.sendEmail(e.toString()+" 服务已恢复",null);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -34,6 +35,7 @@ public class AList<T> extends ArrayList<T> {
                     callback.remove(ports);
                 }
             }
+            Utils.sendEmail(o.toString()+" 服务异常",null);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
