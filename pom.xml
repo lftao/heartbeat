@@ -3,7 +3,7 @@
     <groupId>com.github.lftao</groupId>
     <artifactId>heartbeat</artifactId>
     <version>0.0.1</version>
-    <description>heart-beat</description>
+    <description>heart beat port</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -28,7 +28,7 @@
         <defaultGoal>package</defaultGoal>
         <resources>
             <resource>
-                <directory>src/main/resources/${env}</directory>
+                <directory>src/main/resources/</directory>
                 <targetPath>${project.build.outputDirectory}</targetPath>
                 <filtering>true</filtering>
             </resource>
@@ -42,6 +42,7 @@
                     <excludes>
                         <exclude>*.properties</exclude>
                         <exclude>*.xml</exclude>
+                        <exclude>*.json</exclude>
                     </excludes>
                 </configuration>
             </plugin>
@@ -55,7 +56,7 @@
                     <repositoryName>lib</repositoryName>
                     <configurationDirectory>conf</configurationDirectory>
                     <copyConfigurationDirectory>true</copyConfigurationDirectory>
-                    <configurationSourceDirectory>src/main/resources/${env}</configurationSourceDirectory>
+                    <configurationSourceDirectory>src/main/resources/</configurationSourceDirectory>
                     <includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
                     <target>${project.build.directory}</target>
                     <!-- <logsDirectory>logs</logsDirectory> -->
